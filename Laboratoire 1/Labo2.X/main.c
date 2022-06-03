@@ -14,6 +14,7 @@ static volatile int Flag_1s = 0;
 
 void LCD_seconde(unsigned int seconde);
 extern void pmod_s();
+extern void LED_ToggleValue(unsigned char bNo);
 
 void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void) 
 {  
@@ -24,7 +25,7 @@ void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void)
 #define TMR_TIME    0.001             // x us for each tick
 
 void initialize_timer_interrupt(void) { 
-  T1CONbits.TCKPS = 2;                //    256 prescaler value
+  T1CONbits.TCKPS = 3;                //    256 prescaler value
   T1CONbits.TGATE = 0;                //    not gated input (the default)
   T1CONbits.TCS = 0;                  //    PCBLK input (the default)
   PR1 = (int)(((float)(TMR_TIME * PB_FRQ) / 256) + 0.5);   //set period register, generates one interrupt every 1 ms
@@ -43,7 +44,9 @@ void main() {
     initialize_timer_interrupt();
     int count = 0;
     PMODS_InitPin(1,1,0,0,0); // initialisation du JB1 (RD9))
+    unsigned char pmodValue = 0;
     macro_enable_interrupts();
+    
     
     LCD_WriteStringAtPos("Heure : ", 0, 0);
     unsigned int seconde = 0 ;
@@ -53,10 +56,15 @@ void main() {
         if(Flag_1s)                 // Flag d'interruption à chaque 1 ms
         {
             Flag_1s = 0;            // Reset the flag to capture the next event
+            pmodValue = PMODS_GetValue(1, 1); // Lire D9 (JB1)
+            pmodValue ^= 1; // XOR 
+            PMODS_SetValue(1, 1, pmodValue); // Écrire D9 (JB1)
+            //pmod_s(); // Appelle de la function en assembleur
             if (++count >= 1000) 
             {
                 count = 0;
                 LCD_seconde(++seconde);
+                LED_ToggleValue(0);
             }
         }
     }
