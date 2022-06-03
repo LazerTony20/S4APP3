@@ -1,9 +1,9 @@
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
 # 1 "<command-line>"
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
-# 48 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
+# 50 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 3 4
        
 
 
@@ -11,14 +11,14 @@
 
 
 
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
        
-# 190 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 3 4
+# 191 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 3 4
        
-# 6713 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 3 4
+# 6714 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 3 4
   .extern WDTCON
   .extern WDTCONCLR
   .extern WDTCONSET
@@ -1327,18 +1327,18 @@
   .extern DEVCFG2
   .extern DEVCFG1
   .extern DEVCFG0
-# 18824 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 3 4
+# 18825 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 3 4
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\proc\\ppic32mx.h" 1 3 4
-# 18825 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 2 3 4
-# 191 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
-# 569 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 18826 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 2 3 4
+# 192 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
+# 574 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\cp0defs.h" 1 3 4
 # 36 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\cp0defs.h" 3 4
        
-# 570 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
-# 46 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 2 3 4
-# 49 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S" 2
-# 77 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 575 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
+# 47 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 2 3 4
+# 51 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S" 2
+# 79 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
        .set nomips16
 
         ##################################################################
@@ -1352,7 +1352,7 @@
 ############################
 # Begin ISA switching code #
 ############################
-# 116 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 118 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
 _reset:
         jal _startup
         nop
@@ -1431,14 +1431,14 @@ _no_nmi:
         wrpgpr $28,$28 # Set global pointer in PSS
         mtc0 $11,$12, 2 # Restore SRSCtl
         ehb
-# 225 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 227 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ##################################################################
         # Call the "on reset" procedure
         ##################################################################
         la $8,_on_reset
         jalr $8
         nop
-# 242 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 244 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ##################################################################
         # Clear uninitialized data sections
         ##################################################################
@@ -1454,7 +1454,7 @@ _bss_init:
 _bss_check:
         bltu $8,$9,_bss_init
         nop
-# 323 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 325 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         #####################################################################
         # Initialize data using the linker-generated .dinit table
         # XC32 v2.10 and later provide the data-init code in a separate file
@@ -1465,7 +1465,7 @@ _bss_check:
         la $8, __pic32_data_init
         jalr $8
         nop
-# 345 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 347 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ##################################################################
         # If there are no RAM functions, skip the next section --
         # initializing bus matrix registers.
@@ -1526,12 +1526,12 @@ _ramfunc_done:
 
         # We do NOT do this by default.
         ##################################################################
-# 420 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 422 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ##################################################################
         # Initialize IntCtl/INTCON.VS register with _vector_spacing
         ##################################################################
         la $9,_vector_spacing
-# 434 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 436 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         li $10,0 # Clear $10 and
         ins $10,$9,5,5 # shift value to VS field
         mtc0 $10,$12, 1
@@ -1567,10 +1567,10 @@ _ramfunc_done:
         sll $9,$9,17 # Move UDI to Status.CEE location
         mfc0 $8,$12, 0
         and $8,$8,0x00580000 # Preserve SR, NMI, and BEV
-# 478 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 480 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         or $8,$9,$8 # Include Status.CEE (from UDI)
         mtc0 $8,$12, 0
-# 497 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 499 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ehb
 
         ##################################################################
@@ -1631,7 +1631,7 @@ _gen_exception:
         nop
 
         .end _gen_exception
-# 592 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 594 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         .section .text.main_entry,code,keep
         .align 2
         .ent _main_entry
@@ -1659,7 +1659,7 @@ _main_entry:
         la $8,main
         jalr $8
         nop
-# 628 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/startup/crt0.S"
+# 630 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/startup/crt0.S"
         ##################################################################
         # Just in case, go into infinite loop
         # Call a software breakpoint only with -mdebugger compiler option

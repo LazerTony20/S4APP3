@@ -8,11 +8,11 @@
  # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
  # options passed:  -fpreprocessed build/default/production/main.i
  # -mpic32mxlibs -fno-asynchronous-unwind-tables -fno-dwarf2-cfi-asm
- # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/32MX370F512L
- # -isystem C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include
- # -mresource=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32
+ # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/32MX370F512L
+ # -isystem C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include
+ # -mresource=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32
  # -mprocessor=32MX370F512L
- # -mdfp=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231
+ # -mdfp=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259
  # -mips32r2 -mabi=32 -mpic32mxlibs -msoft-float -mno-legacy-libc
  # -auxbase-strip build/default/production/main.o -g -O1 -fverbose-asm
  # options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
@@ -53,28 +53,28 @@
 	.align	2
 	.globl	main
 .LFB4 = .
-	.file 1 "d:/usherbrooke/s4-electrique - app3 - architecture des ordinateurs/2022 - 02 - \351t\351/labo/labo1.x/main.c"
+	.file 1 "c:/users/antho/documents/programmes/s4app3/laboratoire 1/labo1.x/main.c"
 	.loc 1 15 0
 	.set	nomips16
 	.set	nomicromips
 	.ent	main
 	.type	main, @function
 main:
-	.frame	$sp,40,$31		# vars= 8, regs= 4/0, args= 16, gp= 0
+	.frame	$sp,48,$31		# vars= 16, regs= 4/0, args= 16, gp= 0
 	.mask	0x80070000,-4
 	.fmask	0x00000000,0
 	.set	noreorder
 	.set	nomacro
 # End mchp_output_function_prologue
-	addiu	$sp,$sp,-40	 #,,
+	addiu	$sp,$sp,-48	 #,,
 .LCFI0 = .
-	sw	$31,36($sp)	 #,
-	sw	$18,32($sp)	 #,
-	sw	$17,28($sp)	 #,
+	sw	$31,44($sp)	 #,
+	sw	$18,40($sp)	 #,
+	sw	$17,36($sp)	 #,
 .LCFI1 = .
 	.loc 1 16 0
 	jal	LED_Init	 #
-	sw	$16,24($sp)	 #,
+	sw	$16,32($sp)	 #,
 
 .LVL0 = .
 	.loc 1 17 0
@@ -83,56 +83,66 @@ main:
 
 .LVL1 = .
 	.loc 1 36 0
-	li	$18,1			# 0x1	 # tmp275,
+	li	$18,1			# 0x1	 # tmp288,
 	.loc 1 37 0
 	j	.L2	 #
-	li	$17,8			# 0x8	 # tmp277,
+	li	$17,8			# 0x8	 # tmp290,
 
 .LVL2 = .
 .L3:
-.LBB6 = .
+.LBB2 = .
 	.loc 1 27 0
 	jal	SWT_GetValue	 #
 	move	$4,$16	 #, no
 
 .LVL3 = .
+	addiu	$4,$sp,16	 #,,
+	addu	$3,$4,$16	 # tmp270,, no
+	sb	$2,0($3)	 #, valueSW
 	.loc 1 28 0
-	addiu	$3,$sp,16	 #,,
-	addu	$2,$3,$16	 # tmp265,, no
-	sb	$0,0($2)	 #, valueLED
+	sb	$0,8($3)	 #, valueLED
 .LVL4 = .
 	addiu	$16,$16,1	 # no, no,
 .LVL5 = .
 .L6:
 .L2:
-.LBE6 = .
+.LBE2 = .
 	.loc 1 26 0
-	slt	$2,$16,8	 # tmp266, no,
-	bne	$2,$0,.L3	 #, tmp266,,
-	addiu	$3,$sp,16	 #,,
+	slt	$2,$16,8	 # tmp272, no,
+	bne	$2,$0,.L3
+	nop
+	 #, tmp272,,
+	.loc 1 34 0
+	jal	fct_S	 #
+	addiu	$4,$sp,16	 #,,
 
 .LVL6 = .
 	.loc 1 36 0
-	sb	$18,18($sp)	 # tmp275, valueLED
+	andi	$2,$2,0x00ff	 # D.8937,
+	addiu	$3,$sp,16	 #,,
+	addu	$2,$3,$2	 # tmp275,, D.8937
 .LVL7 = .
+	sb	$18,8($2)	 # tmp288, valueLED
+.LVL8 = .
 	.loc 1 37 0
 	move	$16,$0	 # no,
-.LVL8 = .
+.LVL9 = .
+	addiu	$4,$sp,24	 #,,
 .L8:
-	addu	$2,$3,$16	 # D.8465,, no
-.LBB7 = .
+	addu	$2,$4,$16	 # D.8941,, no
+.LBB3 = .
 	.loc 1 38 0
 	move	$4,$16	 #, no
 	jal	LED_SetValue	 #
-	lbu	$5,0($2)	 #, MEM[base: _15, offset: 0B]
+	lbu	$5,0($2)	 #, MEM[base: _29, offset: 0B]
 
-.LVL9 = .
-.LBE7 = .
+.LVL10 = .
+.LBE3 = .
 	.loc 1 37 0
 	addiu	$16,$16,1	 # no, no,
-.LVL10 = .
-	bne	$16,$17,.L8	 #, no, tmp277,
-	addiu	$3,$sp,16	 #,,
+.LVL11 = .
+	bne	$16,$17,.L8	 #, no, tmp290,
+	addiu	$4,$sp,24	 #,,
 
 	j	.L6	 #
 	move	$16,$0	 # no,
@@ -159,10 +169,25 @@ fct_C:
 	.set	noreorder
 	.set	nomacro
 # End mchp_output_function_prologue
-.LVL11 = .
+.LVL12 = .
+	.loc 1 47 0
+	move	$3,$0	 # i,
+	li	$6,8			# 0x8	 # tmp238,
+.LVL13 = .
+.L11:
+	addu	$5,$4,$3	 # D.8951, valueSW, i
 	.loc 1 49 0
+	lbu	$5,0($5)	 # D.8950, MEM[base: _12, offset: 0B]
+.LVL14 = .
+	.loc 1 47 0
+	addiu	$3,$3,1	 # i, i,
+.LVL15 = .
+	bne	$3,$6,.L11	 #, i, tmp238,
+	addu	$2,$2,$5	 # noLED, noLED, D.8950
+
+	.loc 1 55 0
 	j	$31
-	li	$2,2			# 0x2	 #,
+	nop
 
 	.set	macro
 	.set	reorder
@@ -195,7 +220,7 @@ fct_C:
 	.byte	0x4
 	.4byte	.LCFI0-.LFB4
 	.byte	0xe
-	.uleb128 0x28
+	.uleb128 0x30
 	.byte	0x4
 	.4byte	.LCFI1-.LCFI0
 	.byte	0x9f
@@ -220,7 +245,7 @@ fct_C:
 .Letext0:
 	.section	.debug_info,info
 .Ldebug_info0:
-	.4byte	0x2f6
+	.4byte	0x313
 	.2byte	0x2
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -228,8 +253,8 @@ fct_C:
 	.ascii	"GNU C 4.8.3 MPLAB XC32 Compiler v2.50\000"
 	.byte	0x1
 	.ascii	"main.c\000"
-	.ascii	"D:/USherbrooke/S4-Electrique - APP3 - Architecture des o"
-	.ascii	"rdinateurs/2022 - 02 - \311T\311/Labo/Labo1.X\000"
+	.ascii	"C:/Users/antho/Documents/Programmes/S4APP3/Laboratoire 1"
+	.ascii	"/Labo1.X\000"
 	.4byte	.Ltext0
 	.4byte	.Letext0
 	.4byte	.Ldebug_line0
@@ -275,29 +300,6 @@ fct_C:
 	.ascii	"long int\000"
 	.uleb128 0x3
 	.byte	0x1
-	.ascii	"fct_C\000"
-	.byte	0x1
-	.byte	0x2b
-	.byte	0x1
-	.4byte	0xe9
-	.byte	0x1
-	.4byte	0x17d
-	.uleb128 0x4
-	.ascii	"valueSW\000"
-	.byte	0x1
-	.byte	0x2b
-	.4byte	0x17d
-	.uleb128 0x5
-	.ascii	"noLED\000"
-	.byte	0x1
-	.byte	0x2c
-	.4byte	0xe9
-	.byte	0
-	.uleb128 0x6
-	.byte	0x4
-	.4byte	0xb5
-	.uleb128 0x7
-	.byte	0x1
 	.ascii	"main\000"
 	.byte	0x1
 	.byte	0xf
@@ -306,69 +308,73 @@ fct_C:
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x273
-	.uleb128 0x8
+	.4byte	0x234
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF0
 	.byte	0x1
 	.byte	0x10
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x1ae
-	.uleb128 0x9
+	.4byte	0x158
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF1
 	.byte	0x1
 	.byte	0x11
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x1c1
-	.uleb128 0x9
-	.byte	0
+	.4byte	0x16b
 	.uleb128 0x5
+	.byte	0
+	.uleb128 0x6
 	.ascii	"valueSW\000"
 	.byte	0x1
 	.byte	0x12
-	.4byte	0x273
-	.uleb128 0xa
-	.ascii	"valueLED\000"
-	.byte	0x1
-	.byte	0x13
-	.4byte	0x273
+	.4byte	0x234
 	.byte	0x2
 	.byte	0x91
 	.sleb128 16
-	.uleb128 0x5
+	.uleb128 0x6
+	.ascii	"valueLED\000"
+	.byte	0x1
+	.byte	0x13
+	.4byte	0x234
+	.byte	0x2
+	.byte	0x91
+	.sleb128 24
+	.uleb128 0x7
 	.ascii	"noLED\000"
 	.byte	0x1
 	.byte	0x14
-	.4byte	0xb5
-	.uleb128 0xb
+	.4byte	0x96
+	.4byte	.LLST0
+	.uleb128 0x7
 	.ascii	"no\000"
 	.byte	0x1
 	.byte	0x15
-	.4byte	0xe9
-	.4byte	.LLST0
-	.uleb128 0xc
-	.4byte	.LBB6
-	.4byte	.LBE6
-	.4byte	0x22f
+	.4byte	0xca
+	.4byte	.LLST1
 	.uleb128 0x8
+	.4byte	.LBB2
+	.4byte	.LBE2
+	.4byte	0x1e0
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF2
 	.byte	0x1
 	.byte	0x1b
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x21e
-	.uleb128 0x9
+	.4byte	0x1cf
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0xd
+	.uleb128 0x9
 	.4byte	.LVL3
-	.4byte	0x2b1
-	.uleb128 0xe
+	.4byte	0x2a2
+	.uleb128 0xa
 	.byte	0x1
 	.byte	0x54
 	.byte	0x2
@@ -376,24 +382,24 @@ fct_C:
 	.sleb128 0
 	.byte	0
 	.byte	0
-	.uleb128 0xc
-	.4byte	.LBB7
-	.4byte	.LBE7
-	.4byte	0x260
 	.uleb128 0x8
+	.4byte	.LBB3
+	.4byte	.LBE3
+	.4byte	0x211
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF3
 	.byte	0x1
 	.byte	0x26
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x24f
-	.uleb128 0x9
+	.4byte	0x200
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0xd
-	.4byte	.LVL9
-	.4byte	0x2c4
-	.uleb128 0xe
+	.uleb128 0x9
+	.4byte	.LVL10
+	.4byte	0x2b5
+	.uleb128 0xa
 	.byte	0x1
 	.byte	0x54
 	.byte	0x2
@@ -401,79 +407,130 @@ fct_C:
 	.sleb128 0
 	.byte	0
 	.byte	0
-	.uleb128 0xf
+	.uleb128 0xb
 	.4byte	.LVL0
-	.4byte	0x2d7
-	.uleb128 0xf
+	.4byte	0x2c8
+	.uleb128 0xb
 	.4byte	.LVL1
-	.4byte	0x2ea
+	.4byte	0x2db
+	.uleb128 0x9
+	.4byte	.LVL6
+	.4byte	0x2ee
+	.uleb128 0xa
+	.byte	0x1
+	.byte	0x54
+	.byte	0x2
+	.byte	0x91
+	.sleb128 16
 	.byte	0
-	.uleb128 0x10
-	.4byte	0xb5
-	.4byte	0x283
-	.uleb128 0x11
-	.4byte	0x283
+	.byte	0
+	.uleb128 0xc
+	.4byte	0x96
+	.4byte	0x244
+	.uleb128 0xd
+	.4byte	0x244
 	.byte	0x7
 	.byte	0
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
 	.ascii	"sizetype\000"
-	.uleb128 0x12
-	.4byte	0x14c
+	.uleb128 0xe
+	.byte	0x1
+	.ascii	"fct_C\000"
+	.byte	0x1
+	.byte	0x2b
+	.byte	0x1
+	.4byte	0xca
 	.4byte	.LFB5
 	.4byte	.LFE5
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x2b1
-	.uleb128 0x13
-	.4byte	0x160
+	.4byte	0x29c
+	.uleb128 0xf
+	.ascii	"valueSW\000"
+	.byte	0x1
+	.byte	0x2b
+	.4byte	0x29c
 	.byte	0x1
 	.byte	0x54
-	.uleb128 0x14
-	.4byte	0x16f
-	.byte	0x2
+	.uleb128 0x6
+	.ascii	"noLED\000"
+	.byte	0x1
+	.byte	0x2c
+	.4byte	0xca
+	.byte	0x1
+	.byte	0x52
+	.uleb128 0x7
+	.ascii	"i\000"
+	.byte	0x1
+	.byte	0x2d
+	.4byte	0xca
+	.4byte	.LLST2
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x10
+	.byte	0x4
+	.4byte	0x96
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF2
 	.byte	0x1
 	.byte	0x1b
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x2c4
-	.uleb128 0x9
+	.4byte	0x2b5
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF3
 	.byte	0x1
 	.byte	0x26
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x2d7
-	.uleb128 0x9
+	.4byte	0x2c8
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF0
 	.byte	0x1
 	.byte	0x10
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.4byte	0x2ea
-	.uleb128 0x9
+	.4byte	0x2db
+	.uleb128 0x5
 	.byte	0
-	.uleb128 0x15
+	.uleb128 0x4
 	.byte	0x1
 	.4byte	.LASF1
 	.byte	0x1
 	.byte	0x11
-	.4byte	0xe9
+	.4byte	0xca
 	.byte	0x1
-	.uleb128 0x9
+	.4byte	0x2ee
+	.uleb128 0x5
 	.byte	0
+	.uleb128 0x11
+	.byte	0x1
+	.ascii	"fct_S\000"
+	.byte	0x1
+	.byte	0xb
+	.byte	0x1
+	.4byte	0x308
+	.byte	0x1
+	.4byte	0x308
+	.uleb128 0x12
+	.4byte	0x310
+	.byte	0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.ascii	"char\000"
+	.uleb128 0x10
+	.byte	0x4
+	.4byte	0x308
 	.byte	0
 	.section	.debug_abbrev,info
 .Ldebug_abbrev0:
@@ -518,62 +575,6 @@ fct_C:
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
-	.uleb128 0x27
-	.uleb128 0xc
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x20
-	.uleb128 0xb
-	.uleb128 0x1
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x4
-	.uleb128 0x5
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0x8
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x5
-	.uleb128 0x34
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0x8
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x6
-	.uleb128 0xf
-	.byte	0
-	.uleb128 0xb
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x7
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3f
-	.uleb128 0xc
-	.uleb128 0x3
-	.uleb128 0x8
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
@@ -586,7 +587,7 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x8
+	.uleb128 0x4
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
@@ -605,12 +606,12 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x9
+	.uleb128 0x5
 	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.byte	0
-	.uleb128 0xa
+	.uleb128 0x6
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -625,7 +626,7 @@ fct_C:
 	.uleb128 0xa
 	.byte	0
 	.byte	0
-	.uleb128 0xb
+	.uleb128 0x7
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -640,7 +641,7 @@ fct_C:
 	.uleb128 0x6
 	.byte	0
 	.byte	0
-	.uleb128 0xc
+	.uleb128 0x8
 	.uleb128 0xb
 	.byte	0x1
 	.uleb128 0x11
@@ -651,7 +652,7 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xd
+	.uleb128 0x9
 	.uleb128 0x4109
 	.byte	0x1
 	.uleb128 0x11
@@ -660,7 +661,7 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0xe
+	.uleb128 0xa
 	.uleb128 0x410a
 	.byte	0
 	.uleb128 0x2
@@ -669,7 +670,7 @@ fct_C:
 	.uleb128 0xa
 	.byte	0
 	.byte	0
-	.uleb128 0xf
+	.uleb128 0xb
 	.uleb128 0x4109
 	.byte	0
 	.uleb128 0x11
@@ -678,7 +679,7 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x10
+	.uleb128 0xc
 	.uleb128 0x1
 	.byte	0x1
 	.uleb128 0x49
@@ -687,7 +688,7 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x11
+	.uleb128 0xd
 	.uleb128 0x21
 	.byte	0
 	.uleb128 0x49
@@ -696,10 +697,20 @@ fct_C:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x12
+	.uleb128 0xe
 	.uleb128 0x2e
 	.byte	0x1
-	.uleb128 0x31
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x11
 	.uleb128 0x1
@@ -713,58 +724,94 @@ fct_C:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x13
+	.uleb128 0xf
 	.uleb128 0x5
 	.byte	0
-	.uleb128 0x31
-	.uleb128 0x13
-	.uleb128 0x2
-	.uleb128 0xa
-	.byte	0
-	.byte	0
-	.uleb128 0x14
-	.uleb128 0x34
-	.byte	0
-	.uleb128 0x31
-	.uleb128 0x13
-	.uleb128 0x1c
-	.uleb128 0xb
-	.byte	0
-	.byte	0
-	.uleb128 0x15
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3f
-	.uleb128 0xc
 	.uleb128 0x3
-	.uleb128 0xe
+	.uleb128 0x8
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
 	.uleb128 0x49
 	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
 	.uleb128 0x3c
 	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
 	.byte	0
 	.byte	0
 	.byte	0
 	.section	.debug_loc,info
 .Ldebug_loc0:
 .LLST0:
-	.4byte	.LVL2-.Ltext0
+	.4byte	.LVL6-.Ltext0
 	.4byte	.LVL7-.Ltext0
 	.2byte	0x1
-	.byte	0x60
-	.4byte	.LVL7-.Ltext0
+	.byte	0x52
+	.4byte	0
+	.4byte	0
+.LLST1:
+	.4byte	.LVL2-.Ltext0
 	.4byte	.LVL8-.Ltext0
+	.2byte	0x1
+	.byte	0x60
+	.4byte	.LVL8-.Ltext0
+	.4byte	.LVL9-.Ltext0
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL8-.Ltext0
+	.4byte	.LVL9-.Ltext0
 	.4byte	.LFE4-.Ltext0
 	.2byte	0x1
 	.byte	0x60
+	.4byte	0
+	.4byte	0
+.LLST2:
+	.4byte	.LVL12-.Ltext0
+	.4byte	.LVL13-.Ltext0
+	.2byte	0x2
+	.byte	0x30
+	.byte	0x9f
+	.4byte	.LVL13-.Ltext0
+	.4byte	.LFE5-.Ltext0
+	.2byte	0x1
+	.byte	0x53
 	.4byte	0
 	.4byte	0
 	.section	.debug_aranges,info

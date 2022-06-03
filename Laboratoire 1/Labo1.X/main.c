@@ -8,7 +8,7 @@
 #include "config.h"
 
 int fct_C(unsigned char *valueSW);
-extern int fct_S(int *valueSW);
+extern char fct_S(char *valueSW);
 /*La bonne pratique est d'aouter un _t à la fin d'un type non standard
  pour la lisibilite du programme. C'est ce que fait stdint.h*/
 
@@ -28,10 +28,10 @@ void main() {
             valueLED[no] = 0; //Remet à 0 les LED
         }
         //(numéro 1a)
-        noLED = fct_C(valueSW);   // Appelle de la fonction en C 
+        //noLED = fct_C(valueSW);   // Appelle de la fonction en C 
         
         //(numéro 1b)
-        //noLED = fct_S((int) *valueSW);     // Appelle de la fonction en assembleur
+        noLED = fct_S(valueSW);     // Appelle de la fonction en assembleur
         
         valueLED[noLED] = 1; // modifie le tableau de SW
         for(no=0; no<8; no++)  {
@@ -42,8 +42,14 @@ void main() {
 
 int fct_C(unsigned char *valueSW){
     int noLED;
-
-    noLED = 2;      //met à 2 le numéro de la LED à allumer.
+    int i;
+    
+    for(i=0; i<8 ; i++)
+    {
+       noLED += valueSW[i];
+    }
+    
+    //noLED = 2;      //met à 2 le numéro de la LED à allumer.
 
     return noLED;
 }

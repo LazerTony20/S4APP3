@@ -8,11 +8,11 @@
  # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
  # options passed:  -fpreprocessed build/default/production/led.i
  # -mpic32mxlibs -fno-asynchronous-unwind-tables -fno-dwarf2-cfi-asm
- # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/32MX370F512L
- # -isystem C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include
- # -mresource=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32
+ # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/32MX370F512L
+ # -isystem C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include
+ # -mresource=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32
  # -mprocessor=32MX370F512L
- # -mdfp=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231
+ # -mdfp=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259
  # -mips32r2 -mabi=32 -mpic32mxlibs -msoft-float -mno-legacy-libc
  # -auxbase-strip build/default/production/led.o -g -O1 -fverbose-asm
  # options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
@@ -53,7 +53,7 @@
 	.align	2
 	.globl	LED_ConfigurePins
 .LFB5 = .
-	.file 1 "d:/usherbrooke/s4-electrique - app3 - architecture des ordinateurs/2022 - 02 - \351t\351/labo/labo1.x/led.c"
+	.file 1 "c:/users/antho/documents/programmes/s4app3/laboratoire 1/labo1.x/led.c"
 	.loc 1 71 0
 	.set	nomips16
 	.set	nomicromips
@@ -149,7 +149,7 @@ LED_SetValue:
 .LVL2 = .
 	.loc 1 98 0
 	beq	$2,$0,.L16	 #, tmp234,,
-	sltu	$5,$0,$5	 # D.8475, bVal
+	sltu	$5,$0,$5	 # D.8943, bVal
 
 	sll	$4,$4,2	 # tmp235, bNo,
 .LVL3 = .
@@ -175,7 +175,7 @@ LED_SetValue:
 	.loc 1 101 0
 	lui	$2,%hi(LATA)	 # tmp240,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,0,1	 # tmp241, D.8475,,
+	ins	$3,$5,0,1	 # tmp241, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp241,
 .L16:
 	.loc 1 102 0
@@ -186,7 +186,7 @@ LED_SetValue:
 	.loc 1 104 0
 	lui	$2,%hi(LATA)	 # tmp242,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,1,1	 # tmp243, D.8475,,
+	ins	$3,$5,1,1	 # tmp243, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp243,
 	.loc 1 105 0
 	j	$31
@@ -196,7 +196,7 @@ LED_SetValue:
 	.loc 1 107 0
 	lui	$2,%hi(LATA)	 # tmp244,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,2,1	 # tmp245, D.8475,,
+	ins	$3,$5,2,1	 # tmp245, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp245,
 	.loc 1 108 0
 	j	$31
@@ -206,7 +206,7 @@ LED_SetValue:
 	.loc 1 110 0
 	lui	$2,%hi(LATA)	 # tmp246,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,3,1	 # tmp247, D.8475,,
+	ins	$3,$5,3,1	 # tmp247, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp247,
 	.loc 1 111 0
 	j	$31
@@ -216,7 +216,7 @@ LED_SetValue:
 	.loc 1 113 0
 	lui	$2,%hi(LATA)	 # tmp248,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,4,1	 # tmp249, D.8475,,
+	ins	$3,$5,4,1	 # tmp249, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp249,
 	.loc 1 114 0
 	j	$31
@@ -226,7 +226,7 @@ LED_SetValue:
 	.loc 1 116 0
 	lui	$2,%hi(LATA)	 # tmp250,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,5,1	 # tmp251, D.8475,,
+	ins	$3,$5,5,1	 # tmp251, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp251,
 	.loc 1 117 0
 	j	$31
@@ -236,7 +236,7 @@ LED_SetValue:
 	.loc 1 119 0
 	lui	$2,%hi(LATA)	 # tmp252,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,6,1	 # tmp253, D.8475,,
+	ins	$3,$5,6,1	 # tmp253, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp253,
 	.loc 1 120 0
 	j	$31
@@ -246,7 +246,7 @@ LED_SetValue:
 	.loc 1 122 0
 	lui	$2,%hi(LATA)	 # tmp254,
 	lhu	$3,%lo(LATA)($2)	 #,
-	ins	$3,$5,7,1	 # tmp255, D.8475,,
+	ins	$3,$5,7,1	 # tmp255, D.8943,,
 	sh	$3,%lo(LATA)($2)	 # tmp255,
 	j	$31
 	nop
@@ -392,11 +392,11 @@ LED_SetGroupValue:
 .LEFDE8:
 	.section	.text,code
 .Letext0:
-	.file 2 "c:/program files/microchip/mplabx/v5.45/packs/microchip/pic32mx_dfp/1.3.231/include/proc/p32mx370f512l.h"
+	.file 2 "c:/program files/microchip/mplabx/v6.00/packs/microchip/pic32mx_dfp/1.5.259/include/proc/p32mx370f512l.h"
 	.file 3 "c:/program files/microchip/xc32/v2.50/pic32mx/include/machine/int_types.h"
 	.section	.debug_info,info
 .Ldebug_info0:
-	.4byte	0x42d
+	.4byte	0x40e
 	.2byte	0x2
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -404,8 +404,8 @@ LED_SetGroupValue:
 	.ascii	"GNU C 4.8.3 MPLAB XC32 Compiler v2.50\000"
 	.byte	0x1
 	.ascii	"led.c\000"
-	.ascii	"D:/USherbrooke/S4-Electrique - APP3 - Architecture des o"
-	.ascii	"rdinateurs/2022 - 02 - \311T\311/Labo/Labo1.X\000"
+	.ascii	"C:/Users/antho/Documents/Programmes/S4APP3/Laboratoire 1"
+	.ascii	"/Labo1.X\000"
 	.4byte	.Ltext0
 	.4byte	.Letext0
 	.4byte	.Ldebug_line0
@@ -433,7 +433,7 @@ LED_SetGroupValue:
 	.ascii	"__uint32_t\000"
 	.byte	0x3
 	.byte	0x33
-	.4byte	0x101
+	.4byte	0xe2
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
@@ -449,13 +449,13 @@ LED_SetGroupValue:
 	.uleb128 0x4
 	.byte	0x4
 	.byte	0x2
-	.2byte	0x138b
-	.4byte	0x239
+	.2byte	0x138c
+	.4byte	0x21a
 	.uleb128 0x5
 	.ascii	"LATA0\000"
 	.byte	0x2
-	.2byte	0x138c
-	.4byte	0xef
+	.2byte	0x138d
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1f
@@ -465,8 +465,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA1\000"
 	.byte	0x2
-	.2byte	0x138d
-	.4byte	0xef
+	.2byte	0x138e
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1e
@@ -476,8 +476,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA2\000"
 	.byte	0x2
-	.2byte	0x138e
-	.4byte	0xef
+	.2byte	0x138f
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1d
@@ -487,8 +487,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA3\000"
 	.byte	0x2
-	.2byte	0x138f
-	.4byte	0xef
+	.2byte	0x1390
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1c
@@ -498,8 +498,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA4\000"
 	.byte	0x2
-	.2byte	0x1390
-	.4byte	0xef
+	.2byte	0x1391
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1b
@@ -509,8 +509,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA5\000"
 	.byte	0x2
-	.2byte	0x1391
-	.4byte	0xef
+	.2byte	0x1392
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x1a
@@ -520,8 +520,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA6\000"
 	.byte	0x2
-	.2byte	0x1392
-	.4byte	0xef
+	.2byte	0x1393
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x19
@@ -531,8 +531,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA7\000"
 	.byte	0x2
-	.2byte	0x1393
-	.4byte	0xef
+	.2byte	0x1394
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x18
@@ -542,8 +542,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA9\000"
 	.byte	0x2
-	.2byte	0x1395
-	.4byte	0xef
+	.2byte	0x1396
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x16
@@ -553,8 +553,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA10\000"
 	.byte	0x2
-	.2byte	0x1396
-	.4byte	0xef
+	.2byte	0x1397
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x15
@@ -564,8 +564,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA14\000"
 	.byte	0x2
-	.2byte	0x1398
-	.4byte	0xef
+	.2byte	0x1399
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x11
@@ -575,8 +575,8 @@ LED_SetGroupValue:
 	.uleb128 0x5
 	.ascii	"LATA15\000"
 	.byte	0x2
-	.2byte	0x1399
-	.4byte	0xef
+	.2byte	0x139a
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x1
 	.byte	0x10
@@ -587,13 +587,13 @@ LED_SetGroupValue:
 	.uleb128 0x4
 	.byte	0x4
 	.byte	0x2
-	.2byte	0x139b
-	.4byte	0x253
+	.2byte	0x139c
+	.4byte	0x234
 	.uleb128 0x5
 	.ascii	"w\000"
 	.byte	0x2
-	.2byte	0x139c
-	.4byte	0xef
+	.2byte	0x139d
+	.4byte	0xd0
 	.byte	0x4
 	.byte	0x20
 	.byte	0
@@ -604,18 +604,18 @@ LED_SetGroupValue:
 	.uleb128 0x6
 	.byte	0x4
 	.byte	0x2
-	.2byte	0x138a
-	.4byte	0x267
+	.2byte	0x138b
+	.4byte	0x248
 	.uleb128 0x7
-	.4byte	0x13c
+	.4byte	0x11d
 	.uleb128 0x7
-	.4byte	0x239
+	.4byte	0x21a
 	.byte	0
 	.uleb128 0x8
 	.ascii	"__LATAbits_t\000"
 	.byte	0x2
-	.2byte	0x139e
-	.4byte	0x253
+	.2byte	0x139f
+	.4byte	0x234
 	.uleb128 0x2
 	.byte	0x4
 	.byte	0x7
@@ -641,21 +641,21 @@ LED_SetGroupValue:
 	.byte	0xa8
 	.byte	0x1
 	.byte	0x1
-	.4byte	0x2f7
+	.4byte	0x2d8
 	.uleb128 0xb
 	.ascii	"bVal\000"
 	.byte	0x1
 	.byte	0xa8
-	.4byte	0xb4
+	.4byte	0x95
 	.uleb128 0xc
 	.ascii	"pLedData\000"
 	.byte	0x1
 	.byte	0xaa
-	.4byte	0x2f7
+	.4byte	0x2d8
 	.byte	0
 	.uleb128 0xd
 	.byte	0x4
-	.4byte	0xb4
+	.4byte	0x95
 	.uleb128 0xe
 	.byte	0x1
 	.ascii	"LED_Init\000"
@@ -666,28 +666,28 @@ LED_SetGroupValue:
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x351
+	.4byte	0x332
 	.uleb128 0xf
-	.4byte	0x2be
+	.4byte	0x29f
 	.4byte	.LBB4
 	.4byte	.LBE4
 	.byte	0x1
 	.byte	0x33
-	.4byte	0x347
+	.4byte	0x328
 	.uleb128 0x10
-	.4byte	0x2da
+	.4byte	0x2bb
 	.byte	0
 	.uleb128 0x11
 	.4byte	.LBB5
 	.4byte	.LBE5
 	.uleb128 0x12
-	.4byte	0x2e6
+	.4byte	0x2c7
 	.sleb128 -1081581520
 	.byte	0
 	.byte	0
 	.uleb128 0x13
 	.4byte	.LVL0
-	.4byte	0x29d
+	.4byte	0x27e
 	.byte	0
 	.uleb128 0x14
 	.byte	0x1
@@ -700,18 +700,18 @@ LED_SetGroupValue:
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x392
+	.4byte	0x373
 	.uleb128 0x15
 	.ascii	"bNo\000"
 	.byte	0x1
 	.byte	0x5d
-	.4byte	0xb4
+	.4byte	0x95
 	.4byte	.LLST0
 	.uleb128 0x15
 	.ascii	"bVal\000"
 	.byte	0x1
 	.byte	0x5d
-	.4byte	0xb4
+	.4byte	0x95
 	.4byte	.LLST1
 	.byte	0
 	.uleb128 0x14
@@ -725,54 +725,54 @@ LED_SetGroupValue:
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x3c6
+	.4byte	0x3a7
 	.uleb128 0x15
 	.ascii	"bNo\000"
 	.byte	0x1
 	.byte	0x8f
-	.4byte	0xb4
+	.4byte	0x95
 	.4byte	.LLST2
 	.byte	0
 	.uleb128 0x16
-	.4byte	0x2be
+	.4byte	0x29f
 	.4byte	.LFB8
 	.4byte	.LFE8
 	.byte	0x1
 	.byte	0x6d
 	.byte	0x1
-	.4byte	0x3ec
+	.4byte	0x3cd
 	.uleb128 0x17
-	.4byte	0x2da
+	.4byte	0x2bb
 	.byte	0x1
 	.byte	0x54
 	.uleb128 0x12
-	.4byte	0x2e6
+	.4byte	0x2c7
 	.sleb128 -1081581520
 	.byte	0
 	.uleb128 0x18
 	.ascii	"TRISA\000"
 	.byte	0x2
-	.2byte	0x1353
-	.4byte	0x3fc
+	.2byte	0x1354
+	.4byte	0x3dd
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x19
-	.4byte	0xef
+	.4byte	0xd0
 	.uleb128 0x1a
 	.ascii	"LATAbits\000"
 	.byte	0x2
-	.2byte	0x139f
+	.2byte	0x13a0
 	.ascii	"LATA\000"
-	.4byte	0x419
+	.4byte	0x3fa
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x19
-	.4byte	0x267
+	.4byte	0x248
 	.uleb128 0x18
 	.ascii	"LATAINV\000"
 	.byte	0x2
-	.2byte	0x13a2
-	.4byte	0x3fc
+	.2byte	0x13a3
+	.4byte	0x3dd
 	.byte	0x1
 	.byte	0x1
 	.byte	0

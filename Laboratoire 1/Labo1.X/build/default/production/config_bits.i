@@ -1,5 +1,5 @@
 # 1 "config_bits.c"
-# 1 "D:\\USherbrooke\\S4-Electrique - APP3 - Architecture des ordinateurs\\2022 - 02 - ÉTÉ\\Labo\\Labo1.X//"
+# 1 "C:\\Users\\antho\\Documents\\Programmes\\S4APP3\\Laboratoire 1\\Labo1.X//"
 # 1 "<command-line>"
 # 1 "config_bits.c"
 # 17 "config_bits.c"

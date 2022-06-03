@@ -1,10 +1,10 @@
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/32MX370F512L/p32MX370F512L_div.S"
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/32MX370F512L/p32MX370F512L_div.S"
 # 1 "<command-line>"
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/32MX370F512L/p32MX370F512L_div.S"
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/32MX370F512L/p32MX370F512L_div.S"
  #-------------------------------------------------------------------------
  # MPLAB XC Compiler - PIC32MX370F512L processor Default ISR Vectors module
 
- # Copyright (c) 2020, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ # Copyright (c) 2021, Microchip Technology Inc. and its subsidiaries ("Microchip")
  # All rights reserved.
 
  # This software is developed by Microchip Technology Inc. and its
@@ -19,7 +19,8 @@
  # 2. Redistributions in binary form must reproduce the above
  # copyright notice, this list of conditions and the following
  # disclaimer in the documentation and/or other materials provided
- # with the distribution.
+ # with the distribution. Publication is not required when this file
+ # is used in an embedded application.
  # 3. Microchip's name may not be used to endorse or promote products
  # derived from this software without specific prior written
  # permission.

@@ -8,11 +8,11 @@
  # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
  # options passed:  -fpreprocessed build/default/production/config_bits.i
  # -mpic32mxlibs -fno-asynchronous-unwind-tables -fno-dwarf2-cfi-asm
- # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32/32MX370F512L
- # -isystem C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include
- # -mresource=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/xc32
+ # -mconfig-data-dir=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32/32MX370F512L
+ # -isystem C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include
+ # -mresource=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/xc32
  # -mprocessor=32MX370F512L
- # -mdfp=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231
+ # -mdfp=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259
  # -mips32r2 -mabi=32 -mpic32mxlibs -msoft-float -mno-legacy-libc
  # -auxbase-strip build/default/production/config_bits.o -g -O1
  # -fverbose-asm

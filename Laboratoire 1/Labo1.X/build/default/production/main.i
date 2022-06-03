@@ -1,5 +1,5 @@
 # 1 "main.c"
-# 1 "D:\\USherbrooke\\S4-Electrique - APP3 - Architecture des ordinateurs\\2022 - 02 - ÉTÉ\\Labo\\Labo1.X//"
+# 1 "C:\\Users\\antho\\Documents\\Programmes\\S4APP3\\Laboratoire 1\\Labo1.X//"
 # 1 "<command-line>"
 # 1 "main.c"
 
@@ -8,8 +8,8 @@
 
 
 
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 3 4
        
 
 
@@ -17,12 +17,12 @@
 
 
 
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
        
-# 190 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 1 3 4
-# 38 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 3 4
+# 191 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
+# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 1 3 4
+# 39 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 3 4
        
 
 
@@ -150,7 +150,7 @@ typedef unsigned long long int uintmax_t;
 
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\machine\\int_const.h" 1 3 4
 # 102 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\stdint.h" 2 3 4
-# 45 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 2 3 4
+# 46 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 2 3 4
 
 
 
@@ -6814,25 +6814,188 @@ typedef union {
   };
 } __DEVCFG0bits_t;
 extern volatile __DEVCFG0bits_t DEVCFG0bits __asm__ ("DEVCFG0") __attribute__((section("sfrs"), address(0xBFC02FFC)));
-# 18824 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 3 4
+# 18825 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 3 4
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\proc\\ppic32mx.h" 1 3 4
-# 18825 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/proc/p32mx370f512l.h" 2 3 4
-# 191 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
-# 377 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 18826 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/proc/p32mx370f512l.h" 2 3 4
+# 192 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
+# 374 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
+# 1 "c:\\program files\\microchip\\xc32\\v2.50\\lib\\gcc\\pic32mx\\4.8.3\\include\\pic32m_builtins.h" 1 3 4
+# 41 "c:\\program files\\microchip\\xc32\\v2.50\\lib\\gcc\\pic32mx\\4.8.3\\include\\pic32m_builtins.h" 3 4
+__uint32_t __builtin_mips_get_fcsr (void);
+void __builtin_mips_set_fcsr (__uint32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addq_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addq_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_addq_s_w (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_addu_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_addu_s_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subq_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subq_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_subq_s_w (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_subu_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_subu_s_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_addsc (__int32_t, __int32_t);
+__int32_t __builtin_mips_addwc (__int32_t, __int32_t);
+__int32_t __builtin_mips_modsub (__int32_t, __int32_t);
+__int32_t __builtin_mips_raddu_w_qb (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_absq_s_ph (__int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_absq_s_w (__int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_precrq_qb_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precrq_ph_w (__int32_t, __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precrq_rs_ph_w (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_precrqu_s_qb_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_preceq_w_phl (__int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_preceq_w_phr (__int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precequ_ph_qbl (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precequ_ph_qbr (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precequ_ph_qbla (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precequ_ph_qbra (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_preceu_ph_qbl (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_preceu_ph_qbr (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_preceu_ph_qbla (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_preceu_ph_qbra (__int8_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_shll_qb (__int8_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_shll_ph (__int16_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_shll_s_ph (__int16_t __attribute__ ((vector_size(4))), __int32_t);
+__int32_t __builtin_mips_shll_s_w (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_shrl_qb (__int8_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_shra_ph (__int16_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_shra_r_ph (__int16_t __attribute__ ((vector_size(4))), __int32_t);
+__int32_t __builtin_mips_shra_r_w (__int32_t, __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_muleu_s_ph_qbl (__int8_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_muleu_s_ph_qbr (__int8_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_mulq_rs_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_muleq_s_w_phl (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_muleq_s_w_phr (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_bitrev (__int32_t);
+__int32_t __builtin_mips_insv (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_repl_qb (__int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_repl_ph (__int32_t);
+void __builtin_mips_cmpu_eq_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cmpu_lt_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cmpu_le_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_cmpgu_eq_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_cmpgu_lt_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_cmpgu_le_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cmp_eq_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cmp_lt_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cmp_le_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_pick_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_pick_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_packrl_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+void __builtin_mips_wrdsp (__int32_t, __int32_t);
+__int32_t __builtin_mips_rddsp (__int32_t);
+__int32_t __builtin_mips_lbux (void *, __int32_t);
+__int32_t __builtin_mips_lhx (void *, __int32_t);
+__int32_t __builtin_mips_lwx (void *, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_absq_s_qb (__int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addu_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addu_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_adduh_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_adduh_r_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_append (__int32_t, __int32_t, __int32_t);
+__int32_t __builtin_mips_balign (__int32_t, __int32_t, __int32_t);
+__int32_t __builtin_mips_cmpgdu_eq_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_cmpgdu_lt_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_cmpgdu_le_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_mul_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_mul_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_mulq_rs_w (__int32_t, __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_mulq_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_mulq_s_w (__int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_precr_qb_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precr_sra_ph_w (__int32_t, __int32_t, __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_precr_sra_r_ph_w (__int32_t, __int32_t, __int32_t);
+__int32_t __builtin_mips_prepend (__int32_t, __int32_t, __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_shra_qb (__int8_t __attribute__ ((vector_size(4))), __int32_t);
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_shra_r_qb (__int8_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_shrl_ph (__int16_t __attribute__ ((vector_size(4))), __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subu_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subu_s_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_subuh_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int8_t __attribute__ ((vector_size(4))) __builtin_mips_subuh_r_qb (__int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addqh_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_addqh_r_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_addqh_w (__int32_t, __int32_t);
+__int32_t __builtin_mips_addqh_r_w (__int32_t, __int32_t);
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subqh_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int16_t __attribute__ ((vector_size(4))) __builtin_mips_subqh_r_ph (__int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_subqh_w (__int32_t, __int32_t);
+__int32_t __builtin_mips_subqh_r_w (__int32_t, __int32_t);
+__int64_t __builtin_mips_dpau_h_qbl (__int64_t, __int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpau_h_qbr (__int64_t, __int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsu_h_qbl (__int64_t, __int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsu_h_qbr (__int64_t, __int8_t __attribute__ ((vector_size(4))), __int8_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpaq_s_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsq_s_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_mulsaq_s_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpaq_sa_l_w (__int64_t, __int32_t, __int32_t);
+__int64_t __builtin_mips_dpsq_sa_l_w (__int64_t, __int32_t, __int32_t);
+__int64_t __builtin_mips_maq_s_w_phl (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_maq_s_w_phr (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_maq_sa_w_phl (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_maq_sa_w_phr (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int32_t __builtin_mips_extr_w (__int64_t, __int32_t);
+__int32_t __builtin_mips_extr_r_w (__int64_t, __int32_t);
+__int32_t __builtin_mips_extr_rs_w (__int64_t, __int32_t);
+__int32_t __builtin_mips_extr_s_h (__int64_t, __int32_t);
+__int32_t __builtin_mips_extp (__int64_t, __int32_t);
+__int32_t __builtin_mips_extpdp (__int64_t, __int32_t);
+__int64_t __builtin_mips_shilo (__int64_t, __int32_t);
+__int64_t __builtin_mips_mthlip (__int64_t, __int32_t);
+__int64_t __builtin_mips_madd (__int64_t, __int32_t, __int32_t);
+__int64_t __builtin_mips_maddu (__int64_t, __uint32_t, __uint32_t);
+__int64_t __builtin_mips_msub (__int64_t, __int32_t, __int32_t);
+__int64_t __builtin_mips_msubu (__int64_t, __uint32_t, __uint32_t);
+__int64_t __builtin_mips_mult (__int32_t, __int32_t);
+__int64_t __builtin_mips_multu (__uint32_t, __uint32_t);
+__int64_t __builtin_mips_ldx (void *, __int32_t);
+__int64_t __builtin_mips_dpa_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dps_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_mulsa_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpax_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsx_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpaqx_s_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpaqx_sa_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsqx_s_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+__int64_t __builtin_mips_dpsqx_sa_w_ph (__int64_t, __int16_t __attribute__ ((vector_size(4))), __int16_t __attribute__ ((vector_size(4))));
+void __builtin_mips_cache (__int32_t, const void *);
+__uint32_t __builtin_mfc0 (__uint32_t, __uint32_t);
+void __builtin_mtc0 (__uint32_t, __uint32_t, __uint32_t);
+__uint32_t __builtin_mxc0 (__uint32_t, __uint32_t, __uint32_t);
+__uint32_t __builtin_bcc0 (__uint32_t, __uint32_t, __uint32_t);
+__uint32_t __builtin_bsc0 (__uint32_t, __uint32_t, __uint32_t);
+__uint32_t __builtin_bcsc0 (__uint32_t, __uint32_t, __uint32_t, __uint32_t);
+__uint32_t __builtin_unique_id (const __int8_t * , __int32_t);
+__uint32_t __builtin_section_begin (const __int8_t * );
+__uint32_t __builtin_section_end (const __int8_t * );
+__uint32_t __builtin_section_size (const __int8_t * );
+__uint32_t __builtin_get_isr_state (void);
+void __builtin_set_isr_state (__uint32_t);
+__uint32_t __builtin_disable_interrupts (void);
+__uint32_t __builtin_enable_interrupts (void);
+void __builtin_software_breakpoint (void);
+# 375 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
+
+
+
+
+
+
+
 extern int __XC_UART;
-# 391 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 396 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
 typedef unsigned long _reg_t;
-# 555 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 560 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
 extern unsigned int _xchsrspss (unsigned int);
-# 569 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 3 4
+# 574 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 3 4
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\cp0defs.h" 1 3 4
 # 36 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\cp0defs.h" 3 4
        
-# 570 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
+# 575 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
 
 
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\sys\\appio.h" 1 3 4
-# 573 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
+# 578 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
 # 1 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\sys\\l1cache.h" 1 3 4
 # 50 "c:\\program files\\microchip\\xc32\\v2.50\\pic32mx\\include\\sys\\l1cache.h" 3 4
        
@@ -6982,14 +7145,14 @@ static __inline__ void __pic32_free_coherent (void* ptr)
 
   free ((ptr));
 }
-# 574 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc-pic32m.h" 2 3 4
-# 46 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC32MX_DFP/1.3.231/include/xc.h" 2 3 4
+# 579 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc-pic32m.h" 2 3 4
+# 47 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC32MX_DFP/1.5.259/include/xc.h" 2 3 4
 # 8 "main.c" 2
 # 1 "config.h" 1
 # 9 "main.c" 2
 
 int fct_C(unsigned char *valueSW);
-extern int fct_S(int *valueSW);
+extern char fct_S(char *valueSW);
 
 
 
@@ -7009,10 +7172,10 @@ void main() {
             valueLED[no] = 0;
         }
 
-        noLED = fct_C(valueSW);
 
 
 
+        noLED = fct_S(valueSW);
 
         valueLED[noLED] = 1;
         for(no=0; no<8; no++) {
@@ -7023,8 +7186,14 @@ void main() {
 
 int fct_C(unsigned char *valueSW){
     int noLED;
+    int i;
 
-    noLED = 2;
+    for(i=0; i<8 ; i++)
+    {
+       noLED += valueSW[i];
+    }
+
+
 
     return noLED;
 }
