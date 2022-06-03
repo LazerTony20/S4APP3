@@ -1,0 +1,1 @@
+$(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION) -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2 -mdfp="${DFP_DIR}"D:\USherbrooke\S4-Electrique - APP3 - Architecture des ordinateurs\2022 - 02 - ÉTÉ\Labo\Labo2.X\pmod_s.s
