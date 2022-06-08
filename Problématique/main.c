@@ -21,6 +21,7 @@ void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void)
    IFS0bits.T1IF = 0;     //    clear interrupt flag
 }
 
+
 #define TMR_TIME    0.001             // x us for each tick
 
 void initialize_timer_interrupt(void) { 
@@ -63,6 +64,7 @@ void main() {
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
+                
             }
         }
     }

@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Labo2.X
+PROJECTNAME=Problématique
 
 # Active Configuration
 DEFAULTCONF=default
