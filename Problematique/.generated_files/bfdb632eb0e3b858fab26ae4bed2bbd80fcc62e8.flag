@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  D:\USherbrooke\S4-Electrique - APP3 - Architecture des ordinateurs\2022 - 02 - ÉTÉ\Labo\Labo2_TUTEUR\Labo2.X\aic.c

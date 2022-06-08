@@ -13,7 +13,7 @@
 static volatile int Flag_1m = 0;
 
 void LCD_seconde(unsigned int seconde);
-void TIME_Change(unsigned int *seconde);
+
 
 extern void pmod_s();
 
@@ -51,7 +51,8 @@ void main() {
     
     LCD_WriteStringAtPos("Heure : ", 0, 0);
     unsigned int seconde = 0 ;
-
+    unsigned int debounce[] = {0,0,0} ;
+    
     // Main loop
     while(1) {
         if(Flag_1m)                 // Flag d'interruption à chaque 1 ms
@@ -60,14 +61,14 @@ void main() {
             //pmodValue ^= 1;
             //PMODS_SetValue(1, 1, pmodValue);
             pmod_s();
-            
+            TIME_Change(&seconde, debounce);
             Flag_1m = 0;            // Reset the flag to capture the next event
             if (++count >= 1000) 
             {
-                TIME_Change(&seconde);
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
+                debounce[2] = debounce[1] = debounce[0] = 0;
             }
         }
     }
@@ -79,23 +80,4 @@ void LCD_seconde(unsigned int seconde) {
     LCD_WriteIntAtPos(seconde/60%60, 3, 0, 10, 0);  
     LCD_WriteStringAtPos(":", 0, 10); // affichage des secondes
     LCD_WriteIntAtPos(seconde/3600%24, 3, 0, 7, 0);  
-}
-
-
-
-
-void TIME_Change(unsigned int *seconde)
-{
-    if(BTN_GetValue(1) == 1)
-    {
-        *seconde += 3600;
-    }
-    if(BTN_GetValue(2)== 1)
-    {
-        *seconde += 60;
-    }
-    if(BTN_GetValue(3)== 1)
-    {
-        *seconde += 1;
-    }
 }
