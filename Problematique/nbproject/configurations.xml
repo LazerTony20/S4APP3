@@ -16,6 +16,7 @@
       <itemPath>btn.h</itemPath>
       <itemPath>pmods.h</itemPath>
       <itemPath>setTime.h</itemPath>
+      <itemPath>racine.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -38,6 +39,8 @@
       <itemPath>main.c</itemPath>
       <itemPath>pmod_s.s</itemPath>
       <itemPath>setTime.c</itemPath>
+      <itemPath>racine_s.s</itemPath>
+      <itemPath>racine.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

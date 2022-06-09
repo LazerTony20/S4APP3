@@ -5,7 +5,7 @@
     UdeS
 
   @File Name
-    setTime.c
+    racine.c
 
   @Summary
     Brief description of the file.
@@ -24,7 +24,7 @@
 #include <sys/attribs.h>
 #include <string.h>
 #include "config.h"
-#include "setTime.h"
+#include "racine.h"
 
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -39,24 +39,12 @@
 /* ************************************************************************** */
 
 
-void TIME_Change(unsigned int *seconde,unsigned int *debounce)
-{
-    if((BTN_GetValue(1) == 1) && (debounce[2] == 0))
-    {
-        *seconde += 3600;
-        debounce[2] = 1;
-    }
-    if((BTN_GetValue(2)== 1) && (debounce[1] == 0))
-    {
-        *seconde += 60;
-        debounce[1] = 1;
-    }
-    if((BTN_GetValue(3)== 1) && (debounce[0] == 0))
-    {
-        *seconde += 1;
-        debounce[0] = 1;
-    }
-}
+
+
+
+
+
+
 
 /* *****************************************************************************
  End of File

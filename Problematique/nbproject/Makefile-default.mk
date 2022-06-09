@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=config_bits.c led.c i2c.c acl.c adc.c aic.c spiflash.c lcd.c uart.c btn.c pmods.c main.c pmod_s.s setTime.c
+SOURCEFILES_QUOTED_IF_SPACED=config_bits.c led.c i2c.c acl.c adc.c aic.c spiflash.c lcd.c uart.c btn.c pmods.c main.c pmod_s.s setTime.c racine_s.s racine.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/config_bits.o ${OBJECTDIR}/led.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/setTime.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/config_bits.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/acl.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/aic.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/btn.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pmod_s.o.d ${OBJECTDIR}/setTime.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/config_bits.o ${OBJECTDIR}/led.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/setTime.o ${OBJECTDIR}/racine_s.o ${OBJECTDIR}/racine.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/config_bits.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/acl.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/aic.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/btn.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pmod_s.o.d ${OBJECTDIR}/setTime.o.d ${OBJECTDIR}/racine_s.o.d ${OBJECTDIR}/racine.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/config_bits.o ${OBJECTDIR}/led.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/setTime.o
+OBJECTFILES=${OBJECTDIR}/config_bits.o ${OBJECTDIR}/led.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/setTime.o ${OBJECTDIR}/racine_s.o ${OBJECTDIR}/racine.o
 
 # Source Files
-SOURCEFILES=config_bits.c led.c i2c.c acl.c adc.c aic.c spiflash.c lcd.c uart.c btn.c pmods.c main.c pmod_s.s setTime.c
+SOURCEFILES=config_bits.c led.c i2c.c acl.c adc.c aic.c spiflash.c lcd.c uart.c btn.c pmods.c main.c pmod_s.s setTime.c racine_s.s racine.c
 
 
 
@@ -100,11 +100,21 @@ ${OBJECTDIR}/pmod_s.o: pmod_s.s  .generated_files/50c94572bed244111eb3a89ae6f2a2
 	@${RM} ${OBJECTDIR}/pmod_s.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -D__DEBUG  -D__MPLAB_DEBUGGER_PK3=1 -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/pmod_s.o pmod_s.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,--gdwarf-2,-MD="${OBJECTDIR}/pmod_s.o.d" -mdfp="${DFP_DIR}"
 	
+${OBJECTDIR}/racine_s.o: racine_s.s  .generated_files/76684e1a4c6fc541b0cfeb84d95b81013e5cc36f.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/racine_s.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  -D__DEBUG  -D__MPLAB_DEBUGGER_PK3=1 -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/racine_s.o racine_s.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--defsym=__ICD2RAM=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,--gdwarf-2,-MD="${OBJECTDIR}/racine_s.o.d" -mdfp="${DFP_DIR}"
+	
 else
 ${OBJECTDIR}/pmod_s.o: pmod_s.s  .generated_files/70a106e3ed0de7141c8363522bfe3e075ace6cc1.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/pmod_s.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/pmod_s.o pmod_s.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2,-MD="${OBJECTDIR}/pmod_s.o.d" -mdfp="${DFP_DIR}"
+	
+${OBJECTDIR}/racine_s.o: racine_s.s  .generated_files/5432cb954a4dee7e4aef874462e0724bd7aaaec7.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/racine_s.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION)  -o ${OBJECTDIR}/racine_s.o racine_s.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2,-MD="${OBJECTDIR}/racine_s.o.d" -mdfp="${DFP_DIR}"
 	
 endif
 
@@ -195,6 +205,12 @@ ${OBJECTDIR}/setTime.o: setTime.c  .generated_files/7041d5f6dbca84afa96c5e3a82e9
 	@${RM} ${OBJECTDIR}/setTime.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/setTime.o.d" -o ${OBJECTDIR}/setTime.o setTime.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+${OBJECTDIR}/racine.o: racine.c  .generated_files/ef6864fee70dac7d177bb1cf7b5bc7ea0e07ea3b.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/racine.o.d 
+	@${RM} ${OBJECTDIR}/racine.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/racine.o.d" -o ${OBJECTDIR}/racine.o racine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 else
 ${OBJECTDIR}/config_bits.o: config_bits.c  .generated_files/5ecf4c4f0d71d8407abff1245ea8a467129d60c2.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
 	@${MKDIR} "${OBJECTDIR}" 
@@ -273,6 +289,12 @@ ${OBJECTDIR}/setTime.o: setTime.c  .generated_files/897495a0ae0a5b6ca6b1cadbdb0e
 	@${RM} ${OBJECTDIR}/setTime.o.d 
 	@${RM} ${OBJECTDIR}/setTime.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/setTime.o.d" -o ${OBJECTDIR}/setTime.o setTime.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/racine.o: racine.c  .generated_files/9f248d1cc9ab3fe20cf629236d708a224985a52.flag .generated_files/f8e8104ef9af6d1ce2c705c850260dd2356b3f6a.flag
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/racine.o.d 
+	@${RM} ${OBJECTDIR}/racine.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/racine.o.d" -o ${OBJECTDIR}/racine.o racine.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 

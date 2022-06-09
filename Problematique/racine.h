@@ -9,29 +9,29 @@
  
 
   @File Name
-    setTime.h
+    racine.h
 
  
 
   @Description
      This file groups the declarations of the functions that implement
-     the time change (defined in setTime.c).
+     the sqrt of a binary number (defined in racine.c).
      Include the file in the project when this library is needed.
-     Use #include "setTime.h" in the source files where the functions are needed.
+     Use #include "racine.h" in the source files where the functions are needed.
  */
 /* ************************************************************************** */
 
  
 
-#ifndef _SETTIME_H    /* Guard against multiple inclusion */
-#define _SETTIME_H
+#ifndef _RACINE_H    /* Guard against multiple inclusion */
+#define _RACINE_H
 
   
-void TIME_Change(unsigned int *seconde,unsigned int *debounce);
+//void TIME_Change(unsigned int *seconde,unsigned int *debounce);
 
 
 
-#endif /* _SETTIME_H */
+#endif /* _RACINE_H */
 
 /* *****************************************************************************
  End of File

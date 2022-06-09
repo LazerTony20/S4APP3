@@ -16,6 +16,7 @@ void LCD_seconde(unsigned int seconde);
 
 
 extern void pmod_s();
+extern unsigned int racine_s(unsigned int Saaaaa);
 
 void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void) 
 {  
@@ -45,6 +46,8 @@ void main() {
     BTN_Init();
     initialize_timer_interrupt();
     int count = 0;
+    unsigned int teamp = 0;
+    unsigned int teamp2 = 128;
     PMODS_InitPin(1,1,0,0,0); // initialisation du JB1 (RD9))
     unsigned char pmodValue = 0;
     macro_enable_interrupts();
@@ -62,9 +65,11 @@ void main() {
             //PMODS_SetValue(1, 1, pmodValue);
             pmod_s();
             TIME_Change(&seconde, debounce);
+            
             Flag_1m = 0;            // Reset the flag to capture the next event
             if (++count >= 1000) 
             {
+                teamp = racine_s(teamp2);
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
