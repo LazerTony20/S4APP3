@@ -8,11 +8,13 @@
 #include <sys/attribs.h>
 #include "config.h"
 #include <string.h>
-
+#include "acl.h"
 // Since the flag is changed within an interrupt, we need the keyword volatile.
 static volatile int Flag_1m = 0;
 
 void LCD_seconde(unsigned int seconde);
+void read_value(int *x_axis,int *y_axis,int *z_axis,int *pot);
+
 extern void pmod_s();
 
 void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void) 
@@ -43,6 +45,10 @@ void main() {
     LED_Init();
     initialize_timer_interrupt();
     int count = 0;
+    float x_axis, y_axis, z_axis = 0;
+    float pot = 0;
+  
+    
     PMODS_InitPin(1,1,0,0,0); // initialisation du JB1 (RD9))
     unsigned char pmodValue = 0;
     macro_enable_interrupts();
@@ -65,15 +71,40 @@ void main() {
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
                 
+                
             }
         }
     }
 }
 
 void LCD_seconde(unsigned int seconde) { 
+    
+   
     LCD_WriteIntAtPos(seconde%60, 3, 0, 13, 0);     
     LCD_WriteStringAtPos(":", 0, 13); // affichage des secondes
     LCD_WriteIntAtPos(seconde/60%60, 3, 0, 10, 0);  
     LCD_WriteStringAtPos(":", 0, 10); // affichage des secondes
     LCD_WriteIntAtPos(seconde/3600%24, 3, 0, 7, 0);  
 }
+//void sw_active ()
+
+void read_value(float *x_axis,float *y_axis,float *z_axis,float *pot)
+{
+     float axis_array[3];
+     ACL_ReadGValues(axis_array);
+     
+     x_axis=axis_array[0];
+     y_axis=axis_array[1];
+     z_axis=axis_array[2];
+     
+         
+     
+}
+
+
+            
+            
+            
+            
+            
+            
