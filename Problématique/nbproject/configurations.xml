@@ -11,11 +11,11 @@
       <itemPath>adc.h</itemPath>
       <itemPath>aic.h</itemPath>
       <itemPath>spiflash.h</itemPath>
-      <itemPath>lcd.h</itemPath>
       <itemPath>uart.h</itemPath>
       <itemPath>btn.h</itemPath>
       <itemPath>pmods.h</itemPath>
       <itemPath>swt.h</itemPath>
+      <itemPath>../../../Users/xavbo/OneDrive/Desktop/LibPack_jb-jp/lcd.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -59,7 +59,7 @@
         <targetDevice>PIC32MX370F512L</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>PK3OBPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>

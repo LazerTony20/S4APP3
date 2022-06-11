@@ -222,7 +222,7 @@ unsigned char ACL_SetRange(unsigned char bRange)
 **      padded right with 4 bits of 0.
 **      The raw values are obtained by reading the 6 consecutive registers starting with "0x01: OUT_X_MSB"
 **      
-*/
+*///program page
 void ACL_ReadRawValues(unsigned char *rgRawVals)
 {
     unsigned char bVal = ACL_OUT_X_MSB;
