@@ -20,9 +20,8 @@ racine_s:			# Étiquette de la fonction
     li $t1,0	    # Variable p
     li $t2,0	    # Variable q
     li $t3,1	    # Variable x
-    li $t4,0
-    li $t5,0
-    # add $t4,$a0   # Variable S d'entrée
+    li $t4,0	    # Variable Intermédiaire
+    li $t5,0	    # Variable Intermédiaire
     li $v0,0	    # Variable de sortie
     
     # ------------------------------------------------------------#
@@ -46,18 +45,18 @@ racine_s:			# Étiquette de la fonction
     sub $t0, $t4, $t3	    # S/X - X
     
     sra $t0, $t0, 1	    # Shift right car division par 2
-    add $t3, $t3, $t0
+    add $t3, $t3, $t0	    # Ajoute la valeur de calcul a delta
     
-    bge $t0, 0, finboucle
+    bge $t0, 0, finboucle   # Check si la valeur est negative
     nop
-    li $t5,-1
-    mult $t0, $t5
-    mflo $t0
+    li $t5,-1		    # Multiplication par moins 1
+    mult $t0, $t5	    
+    mflo $t0		    # Mise en memoire du resultat
     finboucle:
-    ble $t0, 1, boucleRacine
+    ble $t0, 1, boucleRacine # Si la valeur est superieur a 1, do it again
     nop
     # ------------------------------------------------------------#
-    addu $v0,$v0,$t3	    # Mise en mémoire de X
+    addu $v0,$v0,$t3	# Mise en mémoire de X
     # ------------------------------------------------------------#
     jr $ra		# Retour à la fonction
     nop			# delay slot

@@ -44,6 +44,7 @@ void main() {
     LCD_Init();
     LED_Init();
     BTN_Init();
+    UART_Init(9600);
     initialize_timer_interrupt();
     int count = 0;
     unsigned int teamp = 0;
@@ -63,13 +64,15 @@ void main() {
             //pmodValue = PMODS_GetValue(1, 1);
             //pmodValue ^= 1;
             //PMODS_SetValue(1, 1, pmodValue);
+            
             pmod_s();
             TIME_Change(&seconde, debounce);
-            
+            UART_PutString("--------\n");
             Flag_1m = 0;            // Reset the flag to capture the next event
-            if (++count >= 1000) 
+            if (++count >= 1000)    // A chaque seconde
             {
                 teamp = racine_s(teamp2);
+                
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
