@@ -27,8 +27,7 @@
 #define _UART_FORM_H
 
   
-//void TIME_Change(unsigned int *seconde,unsigned int *debounce);
-
+void uart_setForm(unsigned int minimum, unsigned int average, unsigned int max);
 
 
 #endif /* _UART_FORM_H */

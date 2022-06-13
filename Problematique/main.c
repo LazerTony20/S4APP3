@@ -72,7 +72,8 @@ void main() {
             if (++count >= 1000)    // A chaque seconde
             {
                 teamp = racine_s(teamp2);
-                UART_PutString("--------\n");
+                //UART_PutString("--------\n");
+                uart_setForm(100,500,800);
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);

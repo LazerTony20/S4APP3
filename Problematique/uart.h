@@ -25,6 +25,7 @@ void UART_CloseUART();
 
 
 void UART_PutString(char szData[]);
+void UART_PutChar(char ch);
 unsigned char UART_GetCharPoll();
 unsigned char UART_AvaliableRx();
 unsigned char UART_GetString( char* pchBuff, int cchBuff );
