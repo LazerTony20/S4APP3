@@ -36,9 +36,9 @@ void uart_setForm(unsigned int minimum, unsigned int average, unsigned int maxim
 {
     //Creation de variables en char en fonciton de charque unité de chaque valeur
     //https://stackoverflow.com/questions/2279379/how-to-convert-integer-to-char-in-c 
-    char min_unite_c, min_dizaine_c,min_centaine_c,
-            avg_unite_c,avg_dizaine_c,avg_centaine_c,
-            max_unite_c,max_dizaine_c,max_centaine_c;
+    char min_unite_c, min_dizaine_c,min_centaine_c,min_mile_c,
+            avg_unite_c,avg_dizaine_c,avg_centaine_c,avg_mile_c,
+            max_unite_c,max_dizaine_c,max_centaine_c,max_mile_c;
     //Puisqu'il faut envoyer des tableaux de caractères dans le UART
     char msg_start[] = "Voici les valeurs de l'accéléromètre (stockées en FLASH) et la moyenne... \n\r";
     char msg_min[] = "Valeur min : ";
@@ -49,13 +49,15 @@ void uart_setForm(unsigned int minimum, unsigned int average, unsigned int maxim
     min_unite_c = (minimum%10)+'0';     //On fait + '0' pour de l'ASCII
     min_dizaine_c = ((minimum%100)/10)+'0';
     min_centaine_c = ((minimum%1000)/100)+'0';
+    min_mile_c = ((minimum%10000)/1000)+'0';
     avg_unite_c =(average%10)+'0';
     avg_dizaine_c = ((average%100)/10)+'0';
     avg_centaine_c = ((average%1000)/100)+'0';
+    avg_mile_c = ((average%10000)/1000)+'0';
     max_unite_c = (maximum%10)+'0';
     max_dizaine_c = ((maximum%100)/10)+'0';
     max_centaine_c = ((maximum%1000)/100)+'0';
-    
+    max_mile_c = ((maximum%10000)/1000)+'0';
     
     //memcpy(tree, one, 200);
     //memcpy(&tree[200], two, 200);
@@ -65,18 +67,21 @@ void uart_setForm(unsigned int minimum, unsigned int average, unsigned int maxim
     //https://superuser.com/questions/555554/putty-clear-scrollback-from-commandline
     UART_PutString(msg_start);
     UART_PutString(msg_min);
+    UART_PutChar(min_mile_c);
     UART_PutChar(min_centaine_c);
     UART_PutChar(min_dizaine_c);
     UART_PutChar(min_unite_c);
     //UART_PutString(msg_p1);
     UART_PutString("\n\r");
     UART_PutString(msg_avg);
+    UART_PutChar(avg_mile_c);
     UART_PutChar(avg_centaine_c);
     UART_PutChar(avg_dizaine_c);
     UART_PutChar(avg_unite_c);
     //UART_PutString(msg_p2);
     UART_PutString("\n\r");
     UART_PutString(msg_max);
+    UART_PutChar(max_mile_c);
     UART_PutChar(max_centaine_c);
     UART_PutChar(max_dizaine_c);
     UART_PutChar(max_unite_c);

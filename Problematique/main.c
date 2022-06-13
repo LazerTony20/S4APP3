@@ -45,8 +45,10 @@ void main() {
     LED_Init();
     BTN_Init();
     UART_Init(9600);
+    AIC_Init();
     initialize_timer_interrupt();
     int count = 0;
+    unsigned int val_pot = 0;
     unsigned int teamp = 0;
     unsigned int teamp2 = 128;
     PMODS_InitPin(1,1,0,0,0); // initialisation du JB1 (RD9))
@@ -67,13 +69,14 @@ void main() {
             
             pmod_s();
             TIME_Change(&seconde, debounce);
-            
+            val_pot = AIC_Val();
             Flag_1m = 0;            // Reset the flag to capture the next event
             if (++count >= 1000)    // A chaque seconde
             {
                 teamp = racine_s(teamp2);
-                //UART_PutString("--------\n");
+                
                 uart_setForm(100,500,800);
+                LCD_WriteIntAtPos(val_pot, 5, 1, 0, 0);
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
