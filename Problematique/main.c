@@ -67,12 +67,12 @@ void main() {
             
             pmod_s();
             TIME_Change(&seconde, debounce);
-            UART_PutString("--------\n");
+            
             Flag_1m = 0;            // Reset the flag to capture the next event
             if (++count >= 1000)    // A chaque seconde
             {
                 teamp = racine_s(teamp2);
-                
+                UART_PutString("--------\n");
                 count = 0;
                 LED_ToggleValue(0);
                 LCD_seconde(++seconde);
