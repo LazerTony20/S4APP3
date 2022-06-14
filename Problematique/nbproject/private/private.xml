@@ -5,13 +5,13 @@
         <group>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/main.c</file>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/racine_s.s</file>
-            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/setTime.c</file>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/racine.c</file>
-            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/pmod_s.s</file>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/racine.h</file>
-            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/uart_form.h</file>
+            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/pmod_s.s</file>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/lcd.c</file>
             <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/uart_form.c</file>
+            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/uart_form.h</file>
+            <file>file:/D:/Users/antho/Documents/Programmation/S4APP3/Problematique/setTime.c</file>
         </group>
     </open-files>
 </project-private>

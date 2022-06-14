@@ -1,0 +1,1 @@
+$(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION) -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2 -mdfp="${DFP_DIR}"D:\Users\antho\Documents\Programmation\S4APP3\Formatif\Pratique\examen_solution.X\_fct_s.s

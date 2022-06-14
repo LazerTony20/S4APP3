@@ -11,7 +11,7 @@
 
 // Since the flag is changed within an interrupt, we need the keyword volatile.
 static volatile int timer_1m = 0;
-
+void show_Time(int seconde, int *tableau);
 extern void fct_s(int seconde, int * hhmmss);
 
 void __ISR(_TIMER_1_VECTOR, IPL2AUTO) Timer1ISR(void) 
@@ -43,6 +43,7 @@ void main() {
     initialize_timer_interrupt();
     int timer_1s = 0;
     int seconde = 0;
+    int tableau[3];
     macro_enable_interrupts();
     
     LCD_CLEAR();
@@ -51,13 +52,25 @@ void main() {
     // Main loop
     while(1) {
         if(timer_1m) {               // Interruption à chaque 1 ms
-        
             timer_1m = 0;            // Reset the compteur to capture the next event
             if (++timer_1s >= 1000) {
                 timer_1s = 0;
                 seconde++;
+                fct_s(seconde, tableau);
                 LCD_WriteIntAtPos(seconde, 6, 0, 10, 1);
+                show_Time(seconde, tableau);
+                //LCD_WriteStringAtPos("Examen : ", 0, 0);
             }
         }
     }
+}
+
+void show_Time(int seconde, int *tableau)
+{
+    LCD_WriteIntAtPos(tableau[2], 3, 1, 0, 0);
+    LCD_WriteStringAtPos("h", 1, 3);
+    LCD_WriteIntAtPos(tableau[1], 3, 1, 4, 0);
+    LCD_WriteStringAtPos("m", 1, 7);
+    LCD_WriteIntAtPos(tableau[0], 3, 1, 8, 0);
+    LCD_WriteStringAtPos("s", 1, 11);
 }
